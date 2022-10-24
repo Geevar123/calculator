@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./calcu.css">
+</head>
+
+<body>
+    <div class="container">
+        <form name="form">
+            <div class="display">
+                <input type="text" placeholder="0" id="result" />
+            </div>
+            <div class="buttons">
+
+                <div class="row">
+                    <input type="button" name="b7" value="7" onClick="display(7)">
+                    <input type="button" name="b8" value="8" onClick="display(8)">
+                    <input type="button" name="b9" value="9" onClick="display(9)">
+                    <input type="button" name="addb" value="+" onClick="display('+')">
+                </div>
+
+                <div class="row">
+                    <input type="button" name="b4" value="4" onClick="display(4)">
+                    <input type="button" name="b5" value="5" onClick="display(5)">
+                    <input type="button" name="b6" value="6" onClick="display(6)">
+                    <input type="button" name="subb" value="-" onClick="display('-')">
+                </div>
+
+                <div class="row">
+                    <input type="button" name="b1" value="1" onClick="display(1)">
+                    <input type="button" name="b2" value="2" onClick="display(2)">
+                    <input type="button" name="b3" value="3" onClick="display(3)">
+                    <input type="button" name="mulb" value="*" onClick="display('*')">
+                </div>
+
+                <div class="row">
+                    <input type="button" name="b0" value="0" onClick="display(0)">
+                    <input type="button" name="potb" value="." onClick="display('.')">
+                    <input type="button" name="divb" value="/" onClick="display('/')">
+                    <input type="button" class="red" value="=" onClick="evaluateexp()">
+                </div>
+                <div class="row" style="margin-top: 6px ;">
+                    <input style="margin-left: 34px; width:118px; border-radius: 16px;  background-color:#ffc371;" class="bs" type="button"
+                        name="b0" value="⌫" onClick="removeElement()">
+                    <input style="margin-left: 22px; width:67px; border-radius: 33%; background-color: red; color: white;" class="bs" type="button"
+                        name="b0" value="AC" onClick="allclear()">
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+<script src="./calc.js"></script>
+
+</html>
